@@ -2,12 +2,12 @@ import React from "react";
 // Global Style
 import GlobalStyle from "./components/GlobalStyle";
 // Import Navbar
-import Nav from "./components/Nav";
+import Nav from "./components/NavResponsive";
 // Import Pages
 import AboutUs from "./pages/AboutUs";
 import OurWork from "./pages/OurWork";
 import ContactUs from "./pages/ContactUs";
-import MovieDetail from "./pages/MovieDetail";
+import ProjectDetail from "./pages/ProjectDetail";
 
 // Router
 import { Route, Switch, useLocation } from "react-router-dom";
@@ -31,7 +31,7 @@ function App() {
               <OurWork />
             </Route>
             <Route path="/work/:id">
-              <MovieDetail />
+              <ProjectDetail />
             </Route>
             <Route path="/contact">
               <ContactUs />
