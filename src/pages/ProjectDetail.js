@@ -6,7 +6,7 @@ import Lightbox from "../components/Lightbox";
 
 // Animations
 import { motion } from "framer-motion";
-import { pageAnimation, fade } from "../animation";
+import { pageAnimation } from "../animation";
 
 const ProjectDetail = () => {
   const history = useHistory();
