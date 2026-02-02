@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { PortfolioState } from "../PortfolioState";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
+import Lightbox from "../components/Lightbox";
 
 // Animations
 import { motion } from "framer-motion";
@@ -23,6 +22,20 @@ const ProjectDetail = () => {
     );
     setProject(currentProject[0]);
   }, [projects, url]);
+
+  const handleNext = () => {
+    if (project) {
+      setPhotoIndex((photoIndex + 1) % project.gallery.length);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (project) {
+      setPhotoIndex(
+        (photoIndex + project.gallery.length - 1) % project.gallery.length
+      );
+    }
+  };
 
   return (
     <>
@@ -85,24 +98,12 @@ const ProjectDetail = () => {
 
       {isLightboxOpen && project && (
         <Lightbox
-          mainSrc={project.gallery[photoIndex]}
-          nextSrc={project.gallery[(photoIndex + 1) % project.gallery.length]}
-          prevSrc={
-            project.gallery[
-              (photoIndex + project.gallery.length - 1) % project.gallery.length
-            ]
-          }
-          onCloseRequest={() => setIsLightboxOpen(false)}
-          onMovePrevRequest={() =>
-            setPhotoIndex(
-              (photoIndex + project.gallery.length - 1) % project.gallery.length
-            )
-          }
-          onMoveNextRequest={() =>
-            setPhotoIndex((photoIndex + 1) % project.gallery.length)
-          }
-          imageTitle={project.title}
-          imageCaption={`${photoIndex + 1} of ${project.gallery.length}`}
+          images={project.gallery}
+          currentIndex={photoIndex}
+          onClose={() => setIsLightboxOpen(false)}
+          onNext={handleNext}
+          onPrevious={handlePrevious}
+          title={project.title}
         />
       )}
     </>

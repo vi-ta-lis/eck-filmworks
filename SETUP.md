@@ -5,8 +5,10 @@
 ### 1. Install Dependencies
 
 ```bash
-npm install @emailjs/browser react-image-lightbox react-icons
+npm install @emailjs/browser react-icons react-helmet-async
 ```
+
+**Note:** We use a custom-built Lightbox component (no external dependency needed).
 
 ### 2. EmailJS Configuration
 
@@ -176,13 +178,14 @@ Future improvements can include:
 - Verify imports at top of PortfolioState.js
 
 **Lightbox not working:**
-- Ensure `react-image-lightbox` is installed
+- No external package needed - uses custom Lightbox component
 - Check browser console for CSS errors
+- Ensure react-icons is installed
 
 ## 📚 Documentation
 
 - [EmailJS Docs](https://www.emailjs.com/docs/)
-- [React Image Lightbox](https://github.com/frontend-collective/react-image-lightbox)
+- [React Image Lightbox](https://github.com/frontend-collective/react-image-lightbox) - ~~DEPRECATED~~ Now using custom Lightbox component
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Framer Motion](https://www.framer.com/motion/)
 - [Styled Components](https://styled-components.com/)

@@ -38,15 +38,17 @@ I've successfully implemented all **Priority 1** features to transform your phot
 
 ### 3. ✅ Image Lightbox/Gallery
 **New Files:**
-- `src/pages/ProjectDetail.js` - Replaces MovieDetail with lightbox support
+- `src/pages/ProjectDetail.js` - Replaces MovieDetail with custom lightbox
+- `src/components/Lightbox.js` - Custom-built lightbox component
 
 **Features:**
 - Click images to view full-screen
-- Keyboard navigation (arrow keys)
-- Image counter display
+- Keyboard navigation (arrow keys, ESC)
+- Next/Previous buttons
 - Gallery grid layout
 - Mobile-friendly swipe gestures
 - Smooth animations
+- **No external dependencies** - uses existing framer-motion
 
 **Updated:**
 - `src/App.js` - Routes now use ProjectDetail instead of MovieDetail
@@ -79,8 +81,10 @@ I've successfully implemented all **Priority 1** features to transform your phot
 You need to run this command to install the new dependencies:
 
 ```bash
-npm install @emailjs/browser react-image-lightbox react-icons
+npm install @emailjs/browser react-icons react-helmet-async
 ```
+
+**Note:** We use a custom Lightbox component (no external package needed).
 
 ---
 

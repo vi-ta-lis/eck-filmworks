@@ -7,8 +7,10 @@
 Run this single command to install everything needed for Priority 1 & 2:
 
 ```bash
-npm install @emailjs/browser react-image-lightbox react-icons react-helmet-async
+npm install @emailjs/browser react-icons react-helmet-async
 ```
+
+**Note:** We use a custom-built Lightbox component, so no external lightbox package is needed.
 
 ### Start Development Server
 
@@ -203,8 +205,8 @@ Then update `category` field in each project to match.
 - ✅ View page source (not inspect element) to see meta tags
 
 ### Lightbox Not Opening
-- ✅ Ensure `react-image-lightbox` is installed
-- ✅ Import CSS: `import "react-image-lightbox/style.css"`
+- ✅ Custom Lightbox component (no package needed)
+- ✅ Ensure `react-icons` is installed
 - ✅ Check browser console
 
 ---
@@ -267,9 +269,9 @@ npm run build
 | Package | Purpose | Priority |
 |---------|---------|----------|
 | `@emailjs/browser` | Contact form email delivery | 1 |
-| `react-image-lightbox` | Full-screen image gallery | 1 |
 | `react-icons` | Icon components | 1 |
 | `react-helmet-async` | SEO meta tag management | 2 |
+| Custom Lightbox | Full-screen image gallery | 1 |
 | `framer-motion` | Animations (already installed) | - |
 | `styled-components` | CSS-in-JS (already installed) | - |
 | `react-router-dom` | Routing (already installed) | - |
@@ -279,10 +281,10 @@ npm run build
 ## 📖 Documentation Links
 
 - [EmailJS Docs](https://www.emailjs.com/docs/)
-- [React Image Lightbox](https://github.com/frontend-collective/react-image-lightbox)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Helmet Async](https://github.com/staylor/react-helmet-async)
 - [Schema.org](https://schema.org/ProfessionalService)
+- Custom Lightbox Component (built-in, no external docs needed)
 
 ---
 
