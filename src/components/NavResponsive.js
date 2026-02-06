@@ -170,7 +170,6 @@ const MenuToggle = styled.button`
   display: none;
   background: transparent;
   border: none;
-  color: #23d997;
   font-size: 2rem;
   cursor: pointer;
   z-index: 12;
@@ -213,7 +212,6 @@ const MobileMenu = styled(motion.ul)`
         transition: color 0.3s ease;
 
         &:hover {
-          color: #23d997;
         }
       }
     }
@@ -223,7 +221,6 @@ const MobileMenu = styled(motion.ul)`
 const ActiveIndicator = styled.div`
   width: 50px;
   height: 3px;
-  background: #23d997;
   margin-top: 0.5rem;
 `;
 

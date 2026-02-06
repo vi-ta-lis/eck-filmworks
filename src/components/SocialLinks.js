@@ -1,14 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import { FaInstagram, FaFacebookF, FaEnvelope, FaPhone } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaWhatsapp,
+  FaEnvelope,
+  FaPhone,
+  FaTiktok,
+} from "react-icons/fa";
 
 const SocialLinks = () => {
   // UPDATE THESE WITH YOUR ACTUAL SOCIAL MEDIA URLS
   const socialMedia = {
-    instagram: "https://instagram.com/yourhandle",
-    facebook: "https://facebook.com/yourpage",
-    email: "contact@eckfilmworks.com",
-    phone: "+1 (555) 123-4567",
+    instagram: "https://www.instagram.com/eckfilmworks",
+    tiktok: "https://www.tiktok.com/@eckfilmworks",
+    email: "eckfilmworks@gmail.com",
+    phone: "+234 08163467787",
+    whatsapp: "https://wa.me/2348163467787",
   };
 
   return (
@@ -24,13 +31,13 @@ const SocialLinks = () => {
       </SocialItem>
 
       <SocialItem
-        href={socialMedia.facebook}
+        href={socialMedia.tiktok}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Facebook"
+        aria-label="TikTok"
       >
-        <FaFacebookF />
-        <span>ECK Filmworks</span>
+        <FaTiktok />
+        <span>@eckfilmworks</span>
       </SocialItem>
 
       <SocialItem href={`mailto:${socialMedia.email}`} aria-label="Email">
@@ -41,6 +48,16 @@ const SocialLinks = () => {
       <SocialItem href={`tel:${socialMedia.phone}`} aria-label="Phone">
         <FaPhone />
         <span>{socialMedia.phone}</span>
+      </SocialItem>
+
+      <SocialItem
+        href={socialMedia.whatsapp}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp"
+      >
+        <FaWhatsapp />
+        <span>Chat on WhatsApp</span>
       </SocialItem>
     </SocialContainer>
   );

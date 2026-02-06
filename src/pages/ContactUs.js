@@ -36,15 +36,14 @@ const ContactUs = () => {
       </div>
 
       <ContentWrapper>
-        <FormSection>
-          <motion.h3 variants={fade}>Send Us A Message</motion.h3>
-          <ContactForm />
-        </FormSection>
-
         <SocialSection>
           <motion.h3 variants={fade}>Connect With Us</motion.h3>
           <SocialLinks />
         </SocialSection>
+        <FormSection>
+          <motion.h3 variants={fade}>Send Us A Message</motion.h3>
+          <ContactForm />
+        </FormSection>
       </ContentWrapper>
     </StyledContact>
   );

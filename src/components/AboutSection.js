@@ -7,6 +7,7 @@ import { StyleLayout } from "../styles.js";
 // Frame Motion
 import { motion } from "framer-motion";
 import { titleAnimate, fade, photoAnimate } from "../animation";
+import { Link } from "react-router-dom/cjs/react-router-dom.min.js";
 const AboutSection = () => {
   return (
     <StyleLayout>
@@ -28,7 +29,9 @@ const AboutSection = () => {
           Contact us for any photography or videography idea that you have, we
           have the best artist in the word that you cannot imagain.
         </motion.p>
-        <motion.button variants={fade}>Contact Us</motion.button>
+        <Link to="/contact">
+          <motion.button variants={fade}>Contact Us</motion.button>
+        </Link>
       </div>
       <div className="image">
         <motion.img

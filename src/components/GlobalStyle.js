@@ -22,7 +22,6 @@ button {
     color: white;
     transition: all .5s ease;
     &:hover{
-        background-color: #23d997;
     }
 }
 h2 {
