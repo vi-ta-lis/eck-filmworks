@@ -8,13 +8,11 @@ import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
 import styled from "styled-components";
 import { StyleLayout } from "../styles";
-import { scrollReveal } from "../animation";
 const ServicesSection = () => {
   const [element, controls] = useScroll();
   return (
     <Services
       ref={element}
-      variants={scrollReveal}
       animate={controls}
       initial="hidden"
     >
