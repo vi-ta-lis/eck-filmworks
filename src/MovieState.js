@@ -3,8 +3,7 @@ import athlete from "./img/athlete-small.png";
 import athlete2 from "./img/athlete2.png";
 import theracer from "./img/theracer-small.png";
 import theracer2 from "./img/theracer-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import goodtimes2 from "./img/goodtimes-small.png";
+
 
 export const MovieState = () => {
   return [
@@ -33,8 +32,8 @@ export const MovieState = () => {
     },
     {
       title: "Good Times",
-      mainImg: goodtimes,
-      secondaryImg: goodtimes2,
+      mainImg: eck1,
+      secondaryImg: eck2,
       url: "/work/good-times",
       awards: [
         {

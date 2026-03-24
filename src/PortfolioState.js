@@ -1,18 +1,17 @@
 // Images
-import athlete from "./img/athlete-small.png";
-import athlete2 from "./img/athlete2.png";
-import theracer from "./img/theracer-small.png";
-import theracer2 from "./img/theracer-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import goodtimes2 from "./img/goodtimes-small.png";
+import eck1 from "./img/eck-1.JPEG";
+import eck2 from "./img/eck-2.JPEG";
+import eck3 from "./img/eck-3.JPEG";
+import eck4 from "./img/eck-4.JPEG";
+
 
 export const PortfolioState = () => {
   return [
     {
       title: "Summer Portrait Session",
       category: "Portraits",
-      mainImg: athlete,
-      secondaryImg: athlete2,
+      mainImg: eck1,
+      secondaryImg: eck2,
       url: "/work/summer-portrait-session",
       description: "A vibrant outdoor portrait session capturing natural beauty and personality.",
       details: [
@@ -32,13 +31,13 @@ export const PortfolioState = () => {
             "Expertly edited to enhance natural features while maintaining authenticity.",
         },
       ],
-      gallery: [athlete, athlete2],
+      gallery: [eck1, eck2],
     },
     {
       title: "Corporate Event Coverage",
       category: "Events",
-      mainImg: goodtimes,
-      secondaryImg: goodtimes2,
+      mainImg: eck1,
+      secondaryImg: eck2,
       url: "/work/corporate-event-coverage",
       description: "Full-day event photography capturing key moments and networking atmosphere.",
       details: [
@@ -58,13 +57,13 @@ export const PortfolioState = () => {
             "Edited highlights delivered within 48 hours for immediate marketing use.",
         },
       ],
-      gallery: [goodtimes, goodtimes2],
+      gallery: [eck1, eck2],
     },
     {
       title: "Elegant Wedding Photography",
       category: "Weddings",
-      mainImg: theracer,
-      secondaryImg: theracer2,
+      mainImg: eck2,
+      secondaryImg: eck3,
       url: "/work/elegant-wedding-photography",
       description: "A beautiful celebration of love captured from ceremony to reception.",
       details: [
@@ -84,13 +83,13 @@ export const PortfolioState = () => {
             "Multiple angles ensure no precious moment is missed during your celebration.",
         },
       ],
-      gallery: [theracer, theracer2],
+      gallery: [eck2, eck3],
     },
     {
       title: "Brand Campaign Shoot",
       category: "Commercial",
-      mainImg: athlete,
-      secondaryImg: athlete2,
+      mainImg: eck1,
+      secondaryImg: eck4,
       url: "/work/brand-campaign-shoot",
       description: "Professional commercial photography for marketing and advertising campaigns.",
       details: [
@@ -110,13 +109,13 @@ export const PortfolioState = () => {
             "Clear licensing terms for web, print, and social media usage.",
         },
       ],
-      gallery: [athlete, athlete2],
+      gallery: [eck1, eck4],
     },
     {
       title: "Family Portrait Session",
       category: "Portraits",
-      mainImg: goodtimes,
-      secondaryImg: goodtimes2,
+      mainImg: eck2,
+      secondaryImg: eck3,
       url: "/work/family-portrait-session",
       description: "Warm, timeless family portraits that you'll treasure for generations.",
       details: [
@@ -136,13 +135,13 @@ export const PortfolioState = () => {
             "High-resolution files perfect for framing, albums, and holiday cards.",
         },
       ],
-      gallery: [goodtimes, goodtimes2],
+      gallery: [eck2, eck3],
     },
     {
       title: "Destination Wedding",
       category: "Weddings",
-      mainImg: theracer,
-      secondaryImg: theracer2,
+      mainImg: eck2,
+      secondaryImg: eck3,
       url: "/work/destination-wedding",
       description: "Breathtaking destination wedding photography in stunning locations.",
       details: [
@@ -162,7 +161,7 @@ export const PortfolioState = () => {
             "Prepared with solutions for any weather to ensure beautiful photos.",
         },
       ],
-      gallery: [theracer, theracer2],
+      gallery: [eck2, eck3],
     },
   ];
 };
