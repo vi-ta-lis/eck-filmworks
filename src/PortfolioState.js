@@ -3,6 +3,13 @@ import eck1 from "./img/eck-1.JPEG";
 import eck2 from "./img/eck-2.JPEG";
 import eck3 from "./img/eck-3.JPEG";
 import eck4 from "./img/eck-4.JPEG";
+import event1 from "./img/emmynon-1.jpeg";
+import event2 from "./img/emmy-2.jpg";
+import event3 from "./img/emmy-3.jpg";
+import event4 from "./img/emmy-4.jpg";
+import event5 from "./img/emmy-5.jpg";
+import event6 from "./img/emmy-6.jpg";
+import event7 from "./img/emmy-7.jpg";
 
 
 export const PortfolioState = () => {
@@ -36,8 +43,8 @@ export const PortfolioState = () => {
     {
       title: "Corporate Event Coverage",
       category: "Events",
-      mainImg: eck1,
-      secondaryImg: eck2,
+      mainImg: event1,
+      secondaryImg: event2,
       url: "/work/corporate-event-coverage",
       description: "Full-day event photography capturing key moments and networking atmosphere.",
       details: [
@@ -57,7 +64,7 @@ export const PortfolioState = () => {
             "Edited highlights delivered within 48 hours for immediate marketing use.",
         },
       ],
-      gallery: [eck1, eck2],
+      gallery: [event1, event2, event3, event4, event5, event6, event7],
     },
     {
       title: "Elegant Wedding Photography",
